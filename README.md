@@ -1,5 +1,5 @@
 <p align="center">
-<img src="pn_docs/docs/images/logo.png" width="200px"/>
+<img src="pn_docs/docs/images/logo2.png" width="200px" style="border-radius: 50%;"/>
 <br>
 <p align="center">
  <img src="https://img.shields.io/github/stars/jarvanstack/pn" />
