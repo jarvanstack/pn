@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+  dt:
+    image: "nginx:latest"
+    container_name: pn_docs_nginx
+    volumes:
+      - ./docs/:/usr/share/nginx/html/
+    ports:
+          - "4006:80"

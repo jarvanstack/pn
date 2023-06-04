@@ -1,0 +1,24 @@
+#  注册需要的私钥, 如果不填则不需要私钥
+registerPrivateKey: "private_key"
+adminContact: "javanstk(微信)"
+version: "v0.0.0"
+sessionExpire: "72h"
+web:
+  addr: ":7001"
+db:
+  use: leveldb
+  leveldb:
+    path: ./data/leveldb
+log:
+  # 环境 dev | prd
+  env: dev
+  # 输出日志路径
+  path: ./log/dc3.log
+  # 日志格式 json|console (不填默认console)
+  encoding: console
+  # 单个文件最大尺寸，默认单位 M  (不填默认100)
+  max_size: 10
+  # 最大时间，默认单位 day (不填默认不删除备份)
+  max_age: 30
+  # 最多保留备份个数 (不填默认不删除备份)
+  max_backups: 30

@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  pn_server:
+    image: "pn_server:latest"
+    container_name: pn_server
+    ports:
+        # Web
+        - "7008:7001"
+    volumes:
+      - /data/pn_server/data:/app/data
+    networks:
+      - pn_server
+networks:
+  pn_server:
+    driver: bridge
